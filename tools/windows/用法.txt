@@ -1,0 +1,3 @@
+1. 将旧版APP重命名为old.apk
+2. 将新版APP重命名为new.apk
+3. 运行 获取差分文件.bat 文件, 可获取patch.patch 和 新版apk的 md5 值
