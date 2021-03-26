@@ -1,5 +1,7 @@
 # diffupdate
-android实现增量更新
+轻松几步实现增量更新
+1. 复制 diffupdate 模块到项目并引入
+2. 需要更新的地方调用`UpdateUtil.updateApp(mContext, true);`
 
 ---
 注: 里面的4个 todo 需要额外注意
