@@ -1,17 +1,15 @@
-# diffupdate
+# android增量更新
+## 步骤
+>环境: windows
+>github 项目地址: [https://github.com/yuankangli/diffupdate](https://github.com/yuankangli/diffupdate)
+里面的4个 todo 需要额外注意
+下载文件需要APP开放存储权限, 这部分需要自己开发实现
+
 轻松几步实现增量更新
 1. 复制 diffupdate 模块到项目并引入
 2. 需要更新的地方调用`UpdateUtil.updateApp(mContext, true);`
 
----
-注: 里面的4个 todo 需要额外注意
----
-## 增量更新原理
-原理和介绍网上讲的都很多了, 我这里就不介绍了, 感兴趣的小伙伴可以搜来看看, 本文使用bsdiff工具来实现 Android 的增量更新
-环境: windows10, Android Studio 4.1.1
-> *注意: 下载文件需要APP开放存储权限, 这部分需要自己开发实现
-
-## 在现有项目上增加增量更新功能
+## 具体图文
 ### 1. 复制github上 diffupdate 文件夹, 并将项目添加到as项目中
 > 如需修改包名, 请注意 `diffupdate/src/main/cpp/update-lib.cpp` 路径第 10 行也需要一起修改
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210326143650492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2w3MDcyNjg3NDM=,size_16,color_FFFFFF,t_70)
